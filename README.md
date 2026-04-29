@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HEADER BANNER -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1B1B3A&height=200&section=header&text=ALSYA%20KANAYA&fontSize=72&fontColor=FFC300&fontAlignY=38&desc=Full%20Stack%20Developer%20%2F%2F%20Builder%20of%20Things&descAlignY=60&descColor=F5F5F5&animation=twinkling&fontAlign=50" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1B1B3A&height=200&section=header&text=NAYA&fontSize=72&fontColor=FFC300&fontAlignY=38&desc=Full%20Stack%20Developer%20%2F%2F%20Builder%20of%20Things&descAlignY=60&descColor=F5F5F5&animation=twinkling&fontAlign=50" />
 
 </div>
 
