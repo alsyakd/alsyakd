@@ -158,7 +158,7 @@ Markdown     █░░░░░░░░░░░░░░░░░░░░    
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-1B1B3A?style=for-the-badge&logo=linkedin&logoColor=FFC300)](https://linkedin.com/in/alsya-kanaya-dzikra-akd07)
 [![Twitter/X](https://img.shields.io/badge/X_(Twitter)-1B1B3A?style=for-the-badge&logo=x&logoColor=FFC300)](https://x.com/akd1027)
-[![Portfolio](https://img.shields.io/badge/Portfolio-1B1B3A?style=for-the-badge&logo=firefox&logoColor=FFC300)](https://yoursite.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-1B1B3A?style=for-the-badge&logo=firefox&logoColor=FFC300)](https://comingsoon.dev)
 [![Email](https://img.shields.io/badge/Email-1B1B3A?style=for-the-badge&logo=gmail&logoColor=FFC300)](mailto:alsyakanayadzikra@gmail.com)
 
 </div>
