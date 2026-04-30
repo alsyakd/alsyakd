@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✦ Star Catcher · Naya's Profile Game</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bebas+Neue&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #1b1b3a;
+        font-family: "Space Mono", monospace;
+        color: #f5f5f5;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        user-select: none;
+      }
+
+      .title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 48px;
+        color: #ffc300;
+        letter-spacing: 0.1em;
+        margin-bottom: 4px;
+        text-align: center;
+      }
+
+      .subtitle {
+        font-size: 11px;
+        color: #666;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      .hud {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 16px;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .hud-item span {
+        color: #ffc300;
+        font-size: 20px;
+        font-family: "Bebas Neue", sans-serif;
+        display: block;
+      }
+
+      #canvas {
+        border: 1px solid #2d2d5e;
+        border-radius: 8px;
+        background: #12122a;
+        cursor: none;
+        display: block;
+      }
+
+      .btn {
+        margin-top: 20px;
+        background: #ffc300;
+        color: #1b1b3a;
+        border: none;
+        padding: 12px 40px;
+        font-family: "Space Mono", monospace;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: opacity 0.15s;
+      }
+
+      .btn:hover {
+        opacity: 0.85;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(27, 27, 58, 0.92);
+        border-radius: 8px;
+        gap: 12px;
+      }
+
+      .overlay-title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 52px;
+        color: #ffc300;
+        letter-spacing: 0.05em;
+      }
+      .overlay-score {
+        font-size: 13px;
+        color: #f5f5f5;
+        letter-spacing: 0.1em;
+      }
+      .overlay-hi {
+        font-size: 11px;
+        color: #666;
+        letter-spacing: 0.1em;
+      }
+      .overlay-msg {
+        font-size: 11px;
+        color: #888;
+        letter-spacing: 0.05em;
+        text-align: center;
+        max-width: 260px;
+        line-height: 1.8;
+      }
+
+      .canvas-wrap {
+        position: relative;
+      }
+
+      .tip {
+        margin-top: 12px;
+        font-size: 10px;
+        color: #444;
+        letter-spacing: 0.08em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">✦ STAR CATCHER ✦</div>
+    <div class="subtitle">a mini game by naya · alsyakd</div>
+
+    <div class="hud">
+      <div class="hud-item">score<span id="score">0</span></div>
+      <div class="hud-item">best<span id="hi">0</span></div>
+      <div class="hud-item">time<span id="timer">30</span></div>
+      <div class="hud-item">combo<span id="combo">x1</span></div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="canvas" width="480" height="400"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="overlay-title">READY?</div>
+        <div class="overlay-msg">
+          Move your cursor to catch ⭐ stars<br />Don't touch 💀 skulls or ☁️
+          clouds!<br />Combo multiplier = catch 3 in a row
+        </div>
+        <button class="btn" onclick="startGame()">START GAME</button>
+      </div>
+    </div>
+
+    <div class="tip">
+      ✦ made with ♥ · share your score: <strong>#NayaStarCatcher</strong> ✦
+    </div>
+
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      const overlay = document.getElementById("overlay");
+      const scoreEl = document.getElementById("score");
+      const hiEl = document.getElementById("hi");
+      const timerEl = document.getElementById("timer");
+      const comboEl = document.getElementById("combo");
+
+      let items = [],
+        score = 0,
+        hi = 0,
+        timeLeft = 30,
+        combo = 1,
+        consecutiveGood = 0;
+      let mx = -100,
+        my = -100,
+        running = false,
+        animId;
+      let particles = [];
+
+      canvas.addEventListener("mousemove", (e) => {
+        const r = canvas.getBoundingClientRect();
+        mx = e.clientX - r.left;
+        my = e.clientY - r.top;
+      });
+
+      canvas.addEventListener(
+        "touchmove",
+        (e) => {
+          e.preventDefault();
+          const r = canvas.getBoundingClientRect();
+          mx = e.touches[0].clientX - r.left;
+          my = e.touches[0].clientY - r.top;
+        },
+        { passive: false },
+      );
+
+      const TYPES = {
+        star: { emoji: "⭐", r: 20, pts: 10, speed: [1.2, 2.5] },
+        gem: { emoji: "💎", r: 18, pts: 25, speed: [1.8, 3.0] },
+        heart: { emoji: "🌸", r: 18, pts: 15, speed: [1.5, 2.8] },
+        skull: { emoji: "💀", r: 22, pts: -20, speed: [1.0, 2.0] },
+        cloud: { emoji: "☁️", r: 24, pts: -10, speed: [0.8, 1.5] },
+      };
+
+      function spawnItem() {
+        const keys = ["star", "star", "star", "gem", "heart", "skull", "cloud"];
+        const type = keys[Math.floor(Math.random() * keys.length)];
+        const t = TYPES[type];
+        const speed = t.speed[0] + Math.random() * (t.speed[1] - t.speed[0]);
+        items.push({
+          type,
+          emoji: t.emoji,
+          r: t.r,
+          pts: t.pts,
+          x: t.r + Math.random() * (canvas.width - t.r * 2),
+          y: -t.r,
+          vy: speed,
+          scale: 1,
+          alpha: 1,
+        });
+      }
+
+      function spawnParticle(x, y, good) {
+        for (let i = 0; i < 8; i++) {
+          const angle = ((Math.PI * 2) / 8) * i;
+          particles.push({
+            x,
+            y,
+            vx: Math.cos(angle) * (1.5 + Math.random() * 2),
+            vy: Math.sin(angle) * (1.5 + Math.random() * 2),
+            alpha: 1,
+            color: good ? "#FFC300" : "#e63946",
+            r: 3 + Math.random() * 3,
+          });
+        }
+      }
+
+      let lastSpawn = 0;
+      let spawnInterval = 900;
+      let timerInterval;
+
+      function startGame() {
+        items = [];
+        particles = [];
+        score = 0;
+        timeLeft = 30;
+        combo = 1;
+        consecutiveGood = 0;
+        mx = -100;
+        my = -100;
+        overlay.style.display = "none";
+        running = true;
+        lastSpawn = performance.now();
+        clearInterval(timerInterval);
+        timerInterval = setInterval(() => {
+          timeLeft--;
+          timerEl.textContent = timeLeft;
+          if (timeLeft <= 10) spawnInterval = 650;
+          if (timeLeft <= 0) endGame();
+        }, 1000);
+        loop(performance.now());
+      }
+
+      function endGame() {
+        running = false;
+        clearInterval(timerInterval);
+        cancelAnimationFrame(animId);
+        if (score > hi) {
+          hi = score;
+          hiEl.textContent = hi;
+        }
+        overlay.style.display = "flex";
+        const msg =
+          score >= 200
+            ? "🏆 LEGENDARY! You broke my record 😭✨"
+            : score >= 100
+              ? "🔥 AMAZING! You're a natural star catcher!"
+              : score >= 50
+                ? "✨ Nice run! Try again for a higher score~"
+                : "🌸 Keep practicing! You got this, bestie!";
+        overlay.innerHTML = `
+    <div class="overlay-title">${score >= 100 ? "✦ WOW! ✦" : "GAME OVER"}</div>
+    <div class="overlay-score">SCORE: ${score}</div>
+    <div class="overlay-hi">BEST: ${hi}</div>
+    <div class="overlay-msg">${msg}</div>
+    <button class="btn" onclick="startGame()">PLAY AGAIN ✦</button>
+  `;
+      }
+
+      function loop(now) {
+        if (!running) return;
+        animId = requestAnimationFrame(loop);
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // grid bg
+        ctx.strokeStyle = "rgba(255,195,0,0.04)";
+        ctx.lineWidth = 0.5;
+        for (let x = 0; x < canvas.width; x += 40) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, canvas.height);
+          ctx.stroke();
+        }
+        for (let y = 0; y < canvas.height; y += 40) {
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(canvas.width, y);
+          ctx.stroke();
+        }
+
+        // spawn
+        if (now - lastSpawn > spawnInterval) {
+          spawnItem();
+          lastSpawn = now;
+        }
+
+        // items
+        ctx.font = "28px serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        for (let i = items.length - 1; i >= 0; i--) {
+          const it = items[i];
+          it.y += it.vy;
+
+          const dx = mx - it.x,
+            dy = my - it.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < it.r + 18) {
+            const good = it.pts > 0;
+            score = Math.max(0, score + (good ? it.pts * combo : it.pts));
+            scoreEl.textContent = score;
+            spawnParticle(it.x, it.y, good);
+            if (good) {
+              consecutiveGood++;
+              if (consecutiveGood >= 3) {
+                combo = Math.min(combo + 1, 5);
+                comboEl.textContent = "x" + combo;
+              }
+            } else {
+              consecutiveGood = 0;
+              combo = 1;
+              comboEl.textContent = "x1";
+            }
+            items.splice(i, 1);
+            continue;
+          }
+
+          if (it.y - it.r > canvas.height) {
+            if (it.pts > 0) {
+              consecutiveGood = 0;
+              combo = 1;
+              comboEl.textContent = "x1";
+            }
+            items.splice(i, 1);
+            continue;
+          }
+
+          ctx.save();
+          ctx.globalAlpha = it.alpha;
+          ctx.translate(it.x, it.y);
+          ctx.fillText(it.emoji, 0, 0);
+          ctx.restore();
+        }
+
+        // particles
+        for (let i = particles.length - 1; i >= 0; i--) {
+          const p = particles[i];
+          p.x += p.vx;
+          p.y += p.vy;
+          p.alpha -= 0.05;
+          if (p.alpha <= 0) {
+            particles.splice(i, 1);
+            continue;
+          }
+          ctx.save();
+          ctx.globalAlpha = p.alpha;
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+
+        // cursor
+        ctx.save();
+        ctx.strokeStyle = combo >= 3 ? "#FFC300" : "#F5F5F5";
+        ctx.lineWidth = combo >= 3 ? 2 : 1;
+        ctx.globalAlpha = 0.9;
+        ctx.beginPath();
+        ctx.arc(mx, my, 16, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(mx, my, 3, 0, Math.PI * 2);
+        ctx.fillStyle = combo >= 3 ? "#FFC300" : "#F5F5F5";
+        ctx.fill();
+        if (combo >= 2) {
+          ctx.font = "bold 11px Space Mono, monospace";
+          ctx.fillStyle = "#FFC300";
+          ctx.textAlign = "center";
+          ctx.fillText("x" + combo, mx, my - 26);
+        }
+        ctx.restore();
+      }
+    </script>
+  </body>
+</html>
