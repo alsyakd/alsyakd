@@ -1,4 +1,4 @@
-# <div align="center">
+<div align="center">
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1B1B3A&height=220&section=header&text=NAYA&fontSize=72&fontColor=FFC300&fontAlignY=38&desc=Aspiring%20Software%20Engineer%20%7C%20Building%20Useful%20Things&descAlignY=60&descColor=F5F5F5&animation=twinkling" />
 
@@ -12,12 +12,13 @@ Passionate about building web applications, learning system design, and creating
 
 ---
 
-## 🚀 About Me
+# 🚀 About Me
 
 ```yaml
 name: Naya
 location: Indonesia
 role: Software Engineering Student
+
 interests:
   - Full Stack Development
   - Backend Engineering
@@ -25,36 +26,35 @@ interests:
   - Open Source
   - Linux & DevOps
 
-currently:
-  learning:
-    - Distributed Systems
-    - Software Architecture
-    - Cloud Fundamentals
+currently_learning:
+  - Software Architecture
+  - Distributed Systems
+  - Cloud Computing
 
-  building:
-    - Personal Projects
-    - Portfolio Applications
-    - Open Source Contributions
+currently_building:
+  - Personal Projects
+  - Portfolio Applications
+  - Open Source Contributions
 
-  looking_for:
-    - Internship Opportunities
-    - Freelance Projects
-    - Collaboration Opportunities
+looking_for:
+  - Internship Opportunities
+  - Freelance Projects
+  - Collaboration Opportunities
 ```
 
 ---
 
-## 🎯 Current Goals
+# 🎯 Current Goals
 
 * 🚀 Build production-ready applications
-* 📚 Master backend development fundamentals
-* 🌍 Contribute to open source projects
-* ⚡ Learn system design and scalability
-* 💼 Start my professional software engineering journey
+* 📚 Learn scalable software architecture
+* 🌍 Contribute to open source
+* ⚡ Improve backend engineering skills
+* 💼 Land my first software engineering role
 
 ---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 ### Languages
 
@@ -92,68 +92,78 @@ currently:
 
 ---
 
-## 📌 Featured Projects
+# 🚀 Featured Projects
 
-### 🎟 Event Ticket Platform
+## 🎟 Event Ticket Platform
 
-Online ticket booking platform with authentication, event management, and booking system.
+Online ticket booking platform featuring authentication, event management, and booking system.
 
-**Tech Stack:** Laravel • MySQL • Bootstrap
-
----
-
-### 🏫 School Profile Website
-
-Modern responsive school profile website designed for information delivery and branding.
-
-**Tech Stack:** HTML • CSS • Bootstrap • JavaScript
+**Stack:** Laravel • MySQL • Bootstrap
 
 ---
 
-### 💼 Personal Portfolio Website
+## 🏫 School Profile Website
 
-Portfolio website showcasing projects, achievements, and technical journey.
+Responsive website designed to showcase school information, achievements, and activities.
 
-**Tech Stack:** React • Tailwind CSS
+**Stack:** HTML • CSS • Bootstrap • JavaScript
 
 ---
 
-## 📊 GitHub Analytics
+## 💼 Personal Portfolio
+
+Portfolio website showcasing projects, skills, and development journey.
+
+**Stack:** React • Tailwind CSS
+
+---
+
+# 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=alsyakd&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1B1B3A&title_color=FFC300&icon_color=FFC300&text_color=F5F5F5" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=alsyakd&show_icons=true&theme=transparent&hide_border=true&title_color=FFC300&icon_color=FFC300" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alsyakd&layout=compact&theme=tokyonight&hide_border=true&bg_color=1B1B3A&title_color=FFC300&text_color=F5F5F5" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alsyakd&layout=compact&theme=transparent&hide_border=true&title_color=FFC300" />
 
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
+# 🔥 GitHub Streak
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=alsyakd\&theme=tokyonight\&no-frame=true\&margin-w=15)](https://github.com/ryo-ma/github-profile-trophy)
+<img src="https://streak-stats.demolab.com?user=alsyakd&theme=tokyonight&hide_border=true" />
 
 </div>
 
 ---
 
-## 📈 Contribution Activity
+# 📈 Contribution Graph
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=alsyakd\&bg_color=1B1B3A\&color=FFC300\&line=FFC300\&point=F5F5F5\&area=true\&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=alsyakd&bg_color=1B1B3A&color=FFC300&line=FFC300&point=FFFFFF&area=true&hide_border=true" />
 
 </div>
 
 ---
 
-## 💡 Developer Mindset
+# 📋 Profile Summary
 
-```text
-while(alive) {
+<div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=alsyakd&theme=tokyonight" />
+
+</div>
+
+---
+
+# 💡 Developer Philosophy
+
+```cpp
+while (alive) {
     learn();
     build();
     improve();
@@ -163,20 +173,20 @@ while(alive) {
 
 ---
 
-## 🤝 Let's Connect
+# 🤝 Connect With Me
 
 <div align="center">
 
 <a href="https://linkedin.com/in/alsya-kanaya-dzikra-akd07">
-<img src="https://img.shields.io/badge/LinkedIn-1B1B3A?style=for-the-badge&logo=linkedin&logoColor=FFC300" />
+<img src="https://img.shields.io/badge/LinkedIn-1B1B3A?style=for-the-badge&logo=linkedin&logoColor=FFC300"/>
 </a>
 
 <a href="https://github.com/alsyakd">
-<img src="https://img.shields.io/badge/GitHub-1B1B3A?style=for-the-badge&logo=github&logoColor=F5F5F5" />
+<img src="https://img.shields.io/badge/GitHub-1B1B3A?style=for-the-badge&logo=github&logoColor=FFFFFF"/>
 </a>
 
 <a href="mailto:alsyakanayadzikra@gmail.com">
-<img src="https://img.shields.io/badge/Email-1B1B3A?style=for-the-badge&logo=gmail&logoColor=FFC300" />
+<img src="https://img.shields.io/badge/Email-1B1B3A?style=for-the-badge&logo=gmail&logoColor=FFC300"/>
 </a>
 
 </div>
