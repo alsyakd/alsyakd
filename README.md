@@ -1,192 +1,158 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1B1B3A&height=220&section=header&text=NAYA&fontSize=72&fontColor=FFC300&fontAlignY=38&desc=Aspiring%20Software%20Engineer%20%7C%20Building%20Useful%20Things&descAlignY=60&descColor=F5F5F5&animation=twinkling" />
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/light.svg">
+    <img alt="GitHub Profile Banner" src="./assets/dark.svg" width="100%">
+</picture>
 
-# 👋 Hi, I'm Naya
+<br>
 
-### Software Engineering Student from Indonesia 🇮🇩
+# Hi, I'm Alsya Kanaya Dzikra 👋
 
-Passionate about building web applications, learning system design, and creating products that solve real problems.
+### Full Stack Developer • Information Technology Student • AI Enthusiast
+
+> *"Building useful digital products through code, innovation, and continuous learning."*
 
 </div>
 
 ---
 
-# 🚀 About Me
+## 🚀 About Me
 
 ```yaml
-name: Naya
-location: Indonesia
-role: Software Engineering Student
+name: Alsya Kanaya Dzikra
+nickname: Naya
 
-interests:
-  - Full Stack Development
-  - Backend Engineering
-  - System Design
-  - Open Source
-  - Linux & DevOps
+location: Magelang, Central Java, Indonesia
 
-currently_learning:
-  - Software Architecture
-  - Distributed Systems
-  - Cloud Computing
+education: Information Technology Student @ Universitas Tidar (UNTIDAR)
 
-currently_building:
-  - Personal Projects
-  - Portfolio Applications
-  - Open Source Contributions
+focus:
+  - Full Stack Web Development
+  - Artificial Intelligence
+  - Software Engineering
+  - Open Source Contribution
 
-looking_for:
-  - Internship Opportunities
-  - Freelance Projects
-  - Collaboration Opportunities
+motto: "Build with purpose. Learn continuously. Create meaningful impact."
 ```
 
 ---
 
-# 🎯 Current Goals
+## 🎯 Current Focus
 
-* 🚀 Build production-ready applications
-* 📚 Learn scalable software architecture
-* 🌍 Contribute to open source
-* ⚡ Improve backend engineering skills
-* 💼 Land my first software engineering role
-
----
-
-# 🛠 Tech Stack
-
-### Languages
-
-![JavaScript](https://img.shields.io/badge/JavaScript-1B1B3A?style=for-the-badge\&logo=javascript\&logoColor=FFC300)
-![TypeScript](https://img.shields.io/badge/TypeScript-1B1B3A?style=for-the-badge\&logo=typescript\&logoColor=FFC300)
-![PHP](https://img.shields.io/badge/PHP-1B1B3A?style=for-the-badge\&logo=php\&logoColor=FFC300)
-![Python](https://img.shields.io/badge/Python-1B1B3A?style=for-the-badge\&logo=python\&logoColor=FFC300)
-
-### Frontend
-
-![HTML5](https://img.shields.io/badge/HTML5-1B1B3A?style=for-the-badge\&logo=html5\&logoColor=FFC300)
-![CSS3](https://img.shields.io/badge/CSS3-1B1B3A?style=for-the-badge\&logo=css3\&logoColor=FFC300)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-1B1B3A?style=for-the-badge\&logo=bootstrap\&logoColor=FFC300)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-1B1B3A?style=for-the-badge\&logo=tailwindcss\&logoColor=FFC300)
-![React](https://img.shields.io/badge/React-1B1B3A?style=for-the-badge\&logo=react\&logoColor=FFC300)
-![Next.js](https://img.shields.io/badge/Next.js-1B1B3A?style=for-the-badge\&logo=next.js\&logoColor=F5F5F5)
-
-### Backend
-
-![Laravel](https://img.shields.io/badge/Laravel-1B1B3A?style=for-the-badge\&logo=laravel\&logoColor=FFC300)
-![Node.js](https://img.shields.io/badge/Node.js-1B1B3A?style=for-the-badge\&logo=node.js\&logoColor=FFC300)
-![Express](https://img.shields.io/badge/Express-1B1B3A?style=for-the-badge\&logo=express\&logoColor=F5F5F5)
-
-### Database
-
-![MySQL](https://img.shields.io/badge/MySQL-1B1B3A?style=for-the-badge\&logo=mysql\&logoColor=FFC300)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1B1B3A?style=for-the-badge\&logo=postgresql\&logoColor=FFC300)
-
-### Tools
-
-![Git](https://img.shields.io/badge/Git-1B1B3A?style=for-the-badge\&logo=git\&logoColor=FFC300)
-![GitHub](https://img.shields.io/badge/GitHub-1B1B3A?style=for-the-badge\&logo=github\&logoColor=F5F5F5)
-![Linux](https://img.shields.io/badge/Linux-1B1B3A?style=for-the-badge\&logo=linux\&logoColor=FFC300)
-![Docker](https://img.shields.io/badge/Docker-1B1B3A?style=for-the-badge\&logo=docker\&logoColor=FFC300)
+* Building scalable and maintainable web applications.
+* Exploring Artificial Intelligence and AI Agents.
+* Learning Software Engineering and System Design best practices.
+* Contributing to Open Source projects.
+* Developing digital products that solve real problems.
 
 ---
 
-# 🚀 Featured Projects
+## 🌱 Currently Learning
 
-## 🎟 Event Ticket Platform
-
-Online ticket booking platform featuring authentication, event management, and booking system.
-
-**Stack:** Laravel • MySQL • Bootstrap
-
----
-
-## 🏫 School Profile Website
-
-Responsive website designed to showcase school information, achievements, and activities.
-
-**Stack:** HTML • CSS • Bootstrap • JavaScript
-
----
-
-## 💼 Personal Portfolio
-
-Portfolio website showcasing projects, skills, and development journey.
-
-**Stack:** React • Tailwind CSS
-
----
-
-# 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=alsyakd&show_icons=true&theme=transparent&hide_border=true&title_color=FFC300&icon_color=FFC300" />
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alsyakd&layout=compact&theme=transparent&hide_border=true&title_color=FFC300" />
-
-</div>
-
----
-
-# 🔥 GitHub Streak
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=alsyakd&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
-
-# 📈 Contribution Graph
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=alsyakd&bg_color=1B1B3A&color=FFC300&line=FFC300&point=FFFFFF&area=true&hide_border=true" />
-
-</div>
-
----
-
-# 📋 Profile Summary
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=alsyakd&theme=tokyonight" />
-
-</div>
-
----
-
-# 💡 Developer Philosophy
-
-```cpp
-while (alive) {
-    learn();
-    build();
-    improve();
-    repeat();
-}
+```text
+Software Engineering
+┣━━ System Design
+┣━━ Artificial Intelligence & AI Agents
+┣━━ Cloud Technologies
+┣━━ Backend & Software Architecture
+┗━━ Open Source Contribution
 ```
 
 ---
 
-# 🤝 Connect With Me
+## 💻 Tech Stack
+
+**Languages**
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=javascript,typescript,php,python,dart" />
+</p>
+
+**Frontend**
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,flutter" />
+</p>
+
+**Backend**
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=nodejs,laravel" />
+</p>
+
+**Database**
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=mysql,postgresql,redis" />
+</p>
+
+**Tools & Platforms**
+
+<p align="left">
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,figma,vscode,bun" />
+</p>
+
+---
+
+## 📂 Projects
+
+Portfolio site is in progress. Selected project write-ups will be added here soon —
+some current work (e.g. **SodakohPohon**, a Laravel + Leaflet.js interactive mapping
+project) is kept private and available on request.
+
+---
+
+## 📈 GitHub Analytics
 
 <div align="center">
 
-<a href="https://linkedin.com/in/alsya-kanaya-dzikra-akd07">
-<img src="https://img.shields.io/badge/LinkedIn-1B1B3A?style=for-the-badge&logo=linkedin&logoColor=FFC300"/>
-</a>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=alsyakd&show_icons=true&include_all_commits=true&count_private=true&hide_border=true"/>
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alsyakd&layout=compact&hide_border=true"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=alsyakd&hide_border=true"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=alsyakd&theme=flat&no-frame=true&no-bg=true&margin-w=8"/>
+
+</div>
+
+---
+
+## 📌 Goals for 2026
+
+* Ship more impactful Open Source projects.
+* Strengthen Software Engineering and System Design skills.
+* Go deeper into Artificial Intelligence and AI Agents.
+* Compete in national and international hackathons.
+* Build products that solve meaningful problems.
+* Keep learning emerging technologies.
+
+---
+
+## 🤝 Let's Connect
+
+<div align="center">
 
 <a href="https://github.com/alsyakd">
-<img src="https://img.shields.io/badge/GitHub-1B1B3A?style=for-the-badge&logo=github&logoColor=FFFFFF"/>
+<img src="https://skillicons.dev/icons?i=github"/>
+</a>
+
+<a href="https://www.linkedin.com/in/alsya-kanaya-dzikra-akd07">
+<img src="https://skillicons.dev/icons?i=linkedin"/>
 </a>
 
 <a href="mailto:alsyakanayadzikra@gmail.com">
-<img src="https://img.shields.io/badge/Email-1B1B3A?style=for-the-badge&logo=gmail&logoColor=FFC300"/>
+<img src="https://skillicons.dev/icons?i=gmail"/>
 </a>
 
 </div>
@@ -195,8 +161,12 @@ while (alive) {
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=1B1B3A&height=120&section=footer" />
+### Thanks for visiting my profile!
 
-<img src="https://komarev.com/ghpvc/?username=alsyakd&color=FFC300&style=flat-square&label=Profile+Views" />
+<img src="https://komarev.com/ghpvc/?username=alsyakd&style=for-the-badge" />
+
+<br>
+
+#### Building digital products that make an impact.
 
 </div>
