@@ -43,9 +43,9 @@ motto: "Gass ajahh, gimana mau sakses kalau terlalu banyak 'ahh tapii'"
 ## 🐍 Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/alsyakd/alsyakd/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alsyakd/alsyakd/output/github-snake.svg">
-  <img alt="github-snake" src="https://raw.githubusercontent.com/alsyakd/alsyakd/output/github-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/alsyakd/alsyakd/main/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alsyakd/alsyakd/main/github-snake.svg">
+  <img alt="github-snake" src="https://raw.githubusercontent.com/alsyakd/alsyakd/main/github-snake.svg">
 </picture>
 
 ---
