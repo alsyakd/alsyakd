@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -15,12 +18,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Checkout output branch
-        uses: actions/checkout@v4
         with:
-          ref: output
-          path: output
+          fetch-depth: 0
 
       - uses: Platane/snk/svg-only@v3
         with:
@@ -33,10 +32,11 @@ jobs:
           show_legend: false
           show_steps: true
 
-      - name: Deploy to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target_branch: output
-          build_dir: output
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          destination_dir: .
+          keep_files: true
+          force_orphan: false
