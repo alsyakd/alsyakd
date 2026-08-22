@@ -10,64 +10,124 @@
 
 # Hi, I'm Alsya Kanaya Dzikra 👋
 
-### Full Stack Developer • Information Technology Student • AI Enthusiast
+### Full Stack Engineer • AI Builder • Problem Solver
 
-> *"Building useful digital products through code, innovation, and continuous learning."*
+> *"Gass ajahh, gimana mau sakses kalau terlalu banyak 'ahh tapii'"*
+> — Sivia, The Catch Up Club
 
 </div>
 
 ---
 
-## 🚀 About Me
+## 📖 About Me
 
 ```yaml
 name: Alsya Kanaya Dzikra
 nickname: Naya
-
 location: Magelang, Central Java, Indonesia
 
-education: Information Technology Student @ Universitas Tidar (UNTIDAR)
+education:
+  - SMK jurusan RPL (Rekayasa Perangkat Lunak)
+  - Information Technology Student @ Universitas Tidar (UNTIDAR)
 
 focus:
-  - Full Stack Web Development
-  - Artificial Intelligence
-  - Software Engineering
-  - Open Source Contribution
+  - Full Stack Web Engineering
+  - AI/LLM Integration & AI Agents
+  - System Architecture & Design
 
-motto: "Build with purpose. Learn continuously. Create meaningful impact."
+motto: "Gass ajahh, gimana mau sakses kalau terlalu banyak 'ahh tapii'"
 ```
 
 ---
 
-## 🎯 Current Focus
+## 🐍 Contribution Snake
 
-* Building scalable and maintainable web applications.
-* Exploring Artificial Intelligence and AI Agents.
-* Learning Software Engineering and System Design best practices.
-* Contributing to Open Source projects.
-* Developing digital products that solve real problems.
-
----
-
-## 🌱 Currently Learning
-
-```text
-Software Engineering
-┣━━ System Design
-┣━━ Artificial Intelligence & AI Agents
-┣━━ Cloud Technologies
-┣━━ Backend & Software Architecture
-┗━━ Open Source Contribution
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/alsyakd/alsyakd/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/alsyakd/alsyakd/output/github-snake.svg">
+  <img alt="github-snake" src="https://raw.githubusercontent.com/alsyakd/alsyakd/output/github-snake.svg">
+</picture>
 
 ---
 
-## 💻 Tech Stack
+## 💡 What I Build
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎫 Event Ticketing System
+A feature-rich fullstack event booking platform.
+
+**Highlights:**
+- Live payment receipt verification
+- Auto-restoring voucher inventories
+- Responsive operations check-in dashboard
+- QR code scanning for entry
+
+`Node.js` `Express` `QR` `Payment Integration`
+
+</td>
+<td width="50%">
+
+### 🌳 SodakohPohon
+Startup donasi pohon untuk carbon offset & restorasi ekosistem di Indonesia.
+
+**Highlights:**
+- Interactive mapping with Leaflet.js
+- Individual & corporate tree planting
+- Carbon offset tracking system
+
+`Laravel` `Leaflet.js` `MySQL`
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🏫 SekolahPintar.my
+SaaS platform manajemen sekolah all-in-one.
+
+**Highlights:**
+- Multi-tenant school profile system
+- Teacher/student/employee attendance
+- Redesigned school frontend & dashboard
+
+`Full Stack` `SaaS` `Dashboard`
+
+</td>
+<td width="50%">
+
+### 🤖 Gemini AI Chatbot
+Lightweight AI chatbot powered by Google Gemini 2.0+.
+
+**Highlights:**
+- Clean Node.js + Express architecture
+- Google Gemini SDK integration
+- Minimal dependencies, maximum performance
+
+`Node.js` `Express` `Gemini SDK`
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+### 📚 And more...
+Sim Akademik • Company Profiles • Landing Pages • E-Commerce platforms — always building, always shipping.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack
 
 **Languages**
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=javascript,typescript,php,python,dart" />
+<img src="https://skillicons.dev/icons?i=javascript,typescript,php,python" />
 </p>
 
 **Frontend**
@@ -79,7 +139,7 @@ Software Engineering
 **Backend**
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=nodejs,laravel" />
+<img src="https://skillicons.dev/icons?i=nodejs,express,laravel" />
 </p>
 
 **Database**
@@ -88,58 +148,65 @@ Software Engineering
 <img src="https://skillicons.dev/icons?i=mysql,postgresql,redis" />
 </p>
 
-**Tools & Platforms**
+**AI & Tools**
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,figma,vscode,bun" />
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,figma,vscode,bun,googlecloud" />
 </p>
 
 ---
 
-## 📂 Projects
+## 📚 Currently Learning
 
-Portfolio site is in progress. Selected project write-ups will be added here soon —
-some current work (e.g. **SodakohPohon**, a Laravel + Leaflet.js interactive mapping
-project) is kept private and available on request.
+```text
+Software Engineering & AI
+┣━━ System Design & Architecture
+┣━━ AI/LLM Integration & AI Agents
+┣━━ Cloud Technologies (GCP/AWS)
+┣━━ Backend Engineering & APIs
+┗━━ Open Source Contribution
+```
+
+**Active Courses:** Dicoding, and other platforms — continuously upskilling.
 
 ---
 
-## 📈 GitHub Analytics
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=alsyakd&show_icons=true&include_all_commits=true&count_private=true&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=alsyakd&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=radical"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alsyakd&layout=compact&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alsyakd&layout=compact&hide_border=true&theme=radical"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=alsyakd&hide_border=true"/>
+<img src="https://streak-stats.demolab.com?user=alsyakd&hide_border=true&theme=radical"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=alsyakd&theme=flat&no-frame=true&no-bg=true&margin-w=8"/>
+<img src="https://github-profile-trophy.vercel.app/?username=alsyakd&theme=radical&no-frame=true&no-bg=true&margin-w=8"/>
 
 </div>
 
 ---
 
-## 📌 Goals for 2026
+## 🎯 Goals for 2026
 
-* Ship more impactful Open Source projects.
-* Strengthen Software Engineering and System Design skills.
-* Go deeper into Artificial Intelligence and AI Agents.
-* Compete in national and international hackathons.
-* Build products that solve meaningful problems.
-* Keep learning emerging technologies.
+- [ ] Ship **3+ projects** to production with real users
+- [ ] Earn **cloud/AI certification** (GCP or AWS)
+- [ ] Contribute to **5+ open source projects**
+- [ ] Build an **AI-powered product** solving real-world problems
+- [ ] Compete in **national/international hackathons**
+- [ ] Master **System Design & Software Architecture**
 
 ---
 
-## 🤝 Let's Connect
+## 📬 Let's Connect
 
 <div align="center">
 
@@ -161,12 +228,12 @@ project) is kept private and available on request.
 
 <div align="center">
 
-### Thanks for visiting my profile!
+### Thanks for visiting my profile! 🚀
 
 <img src="https://komarev.com/ghpvc/?username=alsyakd&style=for-the-badge" />
 
 <br>
 
-#### Building digital products that make an impact.
+#### Building systems that solve real problems.
 
 </div>
