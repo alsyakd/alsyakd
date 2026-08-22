@@ -27,11 +27,7 @@ jobs:
           github_user_name: alsyakd
           outputs: |
             github-snake.svg
-            github-snake-dark.svg
-          svg_out_dark: github-snake-dark.svg
-          svg_out: github-snake.svg
-          show_legend: false
-          show_steps: true
+            github-snake-dark.svg?palette=github-dark
 
       - name: Commit and push snake SVGs
         run: |
