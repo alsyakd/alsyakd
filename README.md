@@ -10,7 +10,7 @@
 
 # Hi, I'm Alsya Kanaya Dzikra 👋
 
-### Full Stack Engineer • AI Builder • Problem Solver
+### Information Technology Student @UNTIDAR • AI Builder • Problem Solver
 
 > *"Gass ajahh, gimana mau sakses kalau terlalu banyak 'ahh tapii'"*
 > — Sivia, The Catch Up Club
