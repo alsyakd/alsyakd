@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Paper Texture & Gradients -->
+    <radialGradient id="paper-dust" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f4eedd"/>
+      <stop offset="70%" stop-color="#e8dfc8"/>
+      <stop offset="100%" stop-color="#d6c7a1"/>
+    </radialGradient>
+    
+    <linearGradient id="passport-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <linearGradient id="stamp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0.75"/>
+    </linearGradient>
+
+    <linearGradient id="gold-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+
+    <!-- SVG Patterns for Vintage Security Background & Grid -->
+    <pattern id="guilloche" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 20 Q 10 0, 20 20 T 40 20" fill="none" stroke="#d4c5a0" stroke-width="0.6" stroke-opacity="0.4"/>
+      <path d="M 0 20 Q 10 40, 20 20 T 40 20" fill="none" stroke="#d4c5a0" stroke-width="0.6" stroke-opacity="0.4"/>
+      <circle cx="20" cy="20" r="12" fill="none" stroke="#cbd5e1" stroke-width="0.4" stroke-opacity="0.3"/>
+    </pattern>
+
+    <pattern id="tech-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#78350f" stroke-width="0.2" stroke-opacity="0.15"/>
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#78350f" stroke-width="0.2" stroke-opacity="0.15"/>
+      <circle cx="20" cy="20" r="0.75" fill="#78350f" fill-opacity="0.2"/>
+    </pattern>
+
+    <!-- Photo Overlay Effect -->
+    <filter id="sepia-tone">
+      <feColorMatrix type="matrix" values="0.393 0.769 0.189 0 0  0.349 0.686 0.168 0 0  0.272 0.534 0.131 0 0  0 0 0 1 0"/>
+    </filter>
+  </defs>
+
+  <!-- Base Document Card Outer Edge -->
+  <rect x="10" y="10" width="780" height="500" rx="16" fill="#78350f" opacity="0.15"/>
+  <rect x="15" y="15" width="770" height="490" rx="14" fill="url(#paper-dust)" stroke="#854d0e" stroke-width="2"/>
+  
+  <!-- Security Pattern Overlay -->
+  <rect x="25" y="25" width="750" height="470" rx="10" fill="url(#guilloche)"/>
+  <rect x="25" y="25" width="750" height="470" rx="10" fill="url(#tech-grid)"/>
+
+  <!-- Vintage Outer Border Frame -->
+  <rect x="27" y="27" width="746" height="466" rx="8" fill="none" stroke="#92400e" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.6"/>
+  <rect x="32" y="32" width="736" height="456" rx="6" fill="none" stroke="#78350f" stroke-width="0.75"/>
+
+  <!-- Corner Ornamental Accent Brackets -->
+  <path d="M 35 50 L 35 37 L 50 37" fill="none" stroke="#78350f" stroke-width="2"/>
+  <path d="M 765 50 L 765 37 L 750 37" fill="none" stroke="#78350f" stroke-width="2"/>
+  <path d="M 35 470 L 35 483 L 50 483" fill="none" stroke="#78350f" stroke-width="2"/>
+  <path d="M 765 470 L 765 483 L 750 483" fill="none" stroke="#78350f" stroke-width="2"/>
+
+  <!-- HEADER BAR (Dark Academic Vintage Blue) -->
+  <rect x="32" y="32" width="736" height="64" rx="5" fill="url(#passport-header)"/>
+  <line x1="32" y1="96" x2="768" y2="96" stroke="#ca8a04" stroke-width="2"/>
+
+  <!-- Header Micro Markings -->
+  <text x="50" y="55" font-family="'Courier New', Courier, monospace" font-size="9" fill="#94a3b8" letter-spacing="2">DEV ARCHIVE // PERSONAL RECORD</text>
+  <text x="50" y="76" font-family="'Georgia', serif" font-size="18" font-weight="bold" fill="#f8fafc" letter-spacing="3">CREATIVE TECHNOLOGIST PASSPORT</text>
+  <text x="750" y="55" font-family="'Courier New', Courier, monospace" font-size="10" fill="#e2e8f0" text-anchor="end" letter-spacing="1.5">RECORD NO: 01-TI/UNTIDAR</text>
+  <text x="750" y="75" font-family="'Courier New', Courier, monospace" font-size="9" fill="#ca8a04" text-anchor="end" letter-spacing="1">STATUS: BUILDING THINGS</text>
+
+  <!-- LEFT COLUMN: PHOTO & ARCHIVAL STAMPS -->
+  <!-- Photo Frame Base -->
+  <rect x="55" y="125" width="170" height="210" fill="#f1f5f9" stroke="#475569" stroke-width="1.5" rx="2"/>
+  <rect x="60" y="130" width="160" height="200" fill="#e2e8f0"/>
+  
+  <!-- Stylized Developer Avatar Silhouette / Photo -->
+  <g id="avatar-art">
+    <rect x="60" y="130" width="160" height="200" fill="#cbd5e1"/>
+    <!-- Abstract Head & Shoulders -->
+    <path d="M 60 330 C 60 270, 90 250, 140 250 C 190 250, 220 270, 220 330 Z" fill="#475569"/>
+    <circle cx="140" cy="200" r="42" fill="#64748b"/>
+    <!-- Glasses Art (Tech Identity Symbol) -->
+    <circle cx="125" cy="195" r="13" fill="none" stroke="#0f172a" stroke-width="2.5"/>
+    <circle cx="155" cy="195" r="13" fill="none" stroke="#0f172a" stroke-width="2.5"/>
+    <line x1="138" y1="195" x2="142" y2="195" stroke="#0f172a" stroke-width="2.5"/>
+    <line x1="112" y1="195" x2="105" y2="192" stroke="#0f172a" stroke-width="2"/>
+    <line x1="168" y1="195" x2="175" y2="192" stroke="#0f172a" stroke-width="2"/>
+    <!-- Overlay Sepia Vignette -->
+    <rect x="60" y="130" width="160" height="200" fill="#78350f" opacity="0.1" style="mix-blend-mode: color;"/>
+  </g>
+
+  <!-- Photo Corner Holders -->
+  <polygon points="55,140 55,125 70,125" fill="#334155"/>
+  <polygon points="225,140 225,125 210,125" fill="#334155"/>
+  <polygon points="55,320 55,335 70,335" fill="#334155"/>
+  <polygon points="225,320 225,335 210,335" fill="#334155"/>
+  <text x="140" y="348" font-family="'Courier New', Courier, monospace" font-size="9" fill="#64748b" text-anchor="middle">FIG. 01 — BUILDER PORTRAIT</text>
+
+  <!-- Stamp: Official Looking Vintage Academic Seal (UNTIDAR Affiliation Accent) -->
+  <g transform="translate(180, 280) rotate(-12)">
+    <circle cx="45" cy="45" r="42" fill="none" stroke="#991b1b" stroke-width="2" stroke-dasharray="6,2" opacity="0.75"/>
+    <circle cx="45" cy="45" r="38" fill="none" stroke="#991b1b" stroke-width="1" opacity="0.75"/>
+    <path id="seal-path" d="M 12 45 A 33 33 0 0 1 78 45" fill="none"/>
+    <text font-family="'Courier New', Courier, monospace" font-size="6.5" fill="#991b1b" font-weight="bold" opacity="0.8">
+      <textPath href="#seal-path" startOffset="50%" text-anchor="middle">UNIVERSITAS TIDAR</textPath>
+    </text>
+    <text x="45" y="42" font-family="'Courier New', Courier, monospace" font-size="7" font-weight="bold" fill="#991b1b" text-anchor="middle" opacity="0.85">ACADEMIC</text>
+    <text x="45" y="50" font-family="'Courier New', Courier, monospace" font-size="6" fill="#991b1b" text-anchor="middle" opacity="0.85">AFFILIATION</text>
+    <text x="45" y="60" font-family="'Georgia', serif" font-size="8" font-weight="bold" fill="#991b1b" text-anchor="middle" opacity="0.85">UNTIDAR</text>
+  </g>
+
+  <!-- RIGHT COLUMN: IDENTITY DATA FIELDS -->
+
+  <!-- 1. NAME FIELD (Primary Identity Hierarchy) -->
+  <g transform="translate(260, 120)">
+    <text x="0" y="10" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="bold" fill="#854d0e" letter-spacing="1.5">FULL NAME (IDENTITAS DIRI)</text>
+    <text x="0" y="34" font-family="'Georgia', serif" font-size="24" font-weight="bold" fill="#0f172a" letter-spacing="1">ALSYA KANAYA DZIKRA</text>
+    <line x1="0" y1="42" x2="480" y2="42" stroke="#cbd5e1" stroke-width="1"/>
+  </g>
+
+  <!-- 2. NICKNAME & ROLE (Secondary Hierarchy) -->
+  <g transform="translate(260, 180)">
+    <!-- Nickname Box -->
+    <g>
+      <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8.5" fill="#64748b" letter-spacing="1">KNOWN AS</text>
+      <text x="0" y="20" font-family="'Georgia', serif" font-size="16" font-weight="bold" fill="#1e293b">"NAYA"</text>
+    </g>
+    
+    <!-- Role Block -->
+    <g transform="translate(120, 0)">
+      <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8.5" fill="#854d0e" font-weight="bold" letter-spacing="1">PRIMARY ROLE</text>
+      <text x="0" y="20" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#0f172a" letter-spacing="0.5">INFORMATION TECHNOLOGY STUDENT</text>
+    </g>
+    <line x1="0" y1="30" x2="480" y2="30" stroke="#cbd5e1" stroke-width="1"/>
+  </g>
+
+  <!-- 3. ACADEMIC AFFILIATION & LOCATION -->
+  <g transform="translate(260, 230)">
+    <!-- Academic Affiliation (Subordinate to Name) -->
+    <g>
+      <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8.5" fill="#64748b" letter-spacing="1">ACADEMIC AFFILIATION</text>
+      <text x="0" y="18" font-family="'Georgia', serif" font-size="13" font-weight="bold" fill="#1e293b">UNIVERSITAS TIDAR <tspan fill="#b45309" font-size="11" font-family="'Courier New', Courier, monospace">(/ UNTIDAR)</tspan></text>
+      <text x="0" y="32" font-family="'Courier New', Courier, monospace" font-size="10" fill="#475569">Dept. of Technology Information</text>
+    </g>
+
+    <!-- Location Block -->
+    <g transform="translate(270, 0)">
+      <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8.5" fill="#64748b" letter-spacing="1">LOCATION / BASE</text>
+      <text x="0" y="18" font-family="'Georgia', serif" font-size="13" font-weight="bold" fill="#1e293b">MAGELANG, INDONESIA</text>
+      <text x="0" y="32" font-family="'Courier New', Courier, monospace" font-size="10" fill="#475569">COORD: 7.4705° S, 110.2178° E</text>
+    </g>
+    <line x1="0" y1="42" x2="480" y2="42" stroke="#cbd5e1" stroke-width="1"/>
+  </g>
+
+  <!-- 4. TECHNICAL INTERESTS & FOCUS AREA -->
+  <g transform="translate(260, 290)">
+    <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8.5" fill="#854d0e" font-weight="bold" letter-spacing="1">FIELD &amp; EXPERIMENTAL INTERESTS</text>
+    
+    <!-- Interest Pill Tags -->
+    <g transform="translate(0, 10)">
+      <!-- Web Dev Pill -->
+      <rect x="0" y="0" width="85" height="20" rx="4" fill="#feefc3" stroke="#d97706" stroke-width="1"/>
+      <text x="42.5" y="13" font-family="'Courier New', Courier, monospace" font-size="10" font-weight="bold" fill="#78350f" text-anchor="middle">WEB DEV</text>
+
+      <!-- AI Pill -->
+      <rect x="95" y="0" width="95" height="20" rx="4" fill="#feefc3" stroke="#d97706" stroke-width="1"/>
+      <text x="142.5" y="13" font-family="'Courier New', Courier, monospace" font-size="10" font-weight="bold" fill="#78350f" text-anchor="middle">ARTIFICIAL INT</text>
+
+      <!-- Experiments Pill -->
+      <rect x="200" y="0" width="135" height="20" rx="4" fill="#feefc3" stroke="#d97706" stroke-width="1"/>
+      <text x="267.5" y="13" font-family="'Courier New', Courier, monospace" font-size="10" font-weight="bold" fill="#78350f" text-anchor="middle">DIGITAL EXPERIMENTS</text>
+    </g>
+    <line x1="0" y1="40" x2="480" y2="40" stroke="#cbd5e1" stroke-width="1"/>
+  </g>
+
+  <!-- 5. PERSONAL TAGLINE & MANIFESTO -->
+  <g transform="translate(260, 350)">
+    <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8.5" fill="#64748b" letter-spacing="1">PERSONAL CREATIVE TAGLINE</text>
+    <text x="0" y="20" font-family="'Georgia', serif" font-size="15" font-style="italic" fill="#0f172a">"things i build on the internet."</text>
+    <text x="245" y="20" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="bold" fill="#b45309">web • ai • experiments</text>
+  </g>
+
+  <!-- FOOTER & SIGNATURE SECTION -->
+  <line x1="55" y1="395" x2="745" y2="395" stroke="#92400e" stroke-width="1" stroke-dasharray="4,2" opacity="0.5"/>
+
+  <!-- Left Footer: Micro Record Metadata -->
+  <g transform="translate(55, 415)">
+    <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8" fill="#64748b">SYS_ID: UNTIDAR//TI-DEV-01</text>
+    <text x="0" y="12" font-family="'Courier New', Courier, monospace" font-size="8" fill="#64748b">ISSUED BY: CREATIVE TECH LABS</text>
+    <text x="0" y="24" font-family="'Courier New', Courier, monospace" font-size="8" fill="#64748b">VERIFIED: MAGELANG ARCHIVE</text>
+  </g>
+
+  <!-- Center Footer: Decorative Tech Stamp/Barcode -->
+  <g transform="translate(300, 408)">
+    <!-- Mini Barcode Visual -->
+    <rect x="0" y="0" width="2" height="25" fill="#334155"/>
+    <rect x="4" y="0" width="1" height="25" fill="#334155"/>
+    <rect x="7" y="0" width="3" height="25" fill="#334155"/>
+    <rect x="12" y="0" width="1" height="25" fill="#334155"/>
+    <rect x="15" y="0" width="4" height="25" fill="#334155"/>
+    <rect x="21" y="0" width="2" height="25" fill="#334155"/>
+    <rect x="25" y="0" width="1" height="25" fill="#334155"/>
+    <rect x="28" y="0" width="3" height="25" fill="#334155"/>
+    <rect x="33" y="0" width="2" height="25" fill="#334155"/>
+    <rect x="37" y="0" width="4" height="25" fill="#334155"/>
+    <rect x="43" y="0" width="1" height="25" fill="#334155"/>
+    <rect x="46" y="0" width="2" height="25" fill="#334155"/>
+    <rect x="50" y="0" width="3" height="25" fill="#334155"/>
+    <rect x="55" y="0" width="1" height="25" fill="#334155"/>
+    <rect x="58" y="0" width="4" height="25" fill="#334155"/>
+    <rect x="64" y="0" width="2" height="25" fill="#334155"/>
+    <rect x="68" y="0" width="1" height="25" fill="#334155"/>
+    <text x="35" y="34" font-family="'Courier New', Courier, monospace" font-size="7" fill="#64748b" text-anchor="middle">NAYA-DEV-RECORD</text>
+  </g>
+
+  <!-- Right Footer: Signature Field -->
+  <g transform="translate(560, 405)">
+    <text x="0" y="0" font-family="'Courier New', Courier, monospace" font-size="8" fill="#64748b">HOLDER SIGNATURE</text>
+    <!-- Stylized Handwritten Signature for "Naya" -->
+    <path d="M 10 28 C 25 5, 30 35, 45 15 C 55 0, 60 30, 75 20 C 85 10, 90 25, 110 12 C 120 5, 125 18, 140 15" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="32" x2="160" y2="32" stroke="#94a3b8" stroke-width="1"/>
+    <text x="80" y="42" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="bold" fill="#334155" text-anchor="middle">NAYA</text>
+  </g>
+
+  <!-- Bottom Passport Machine Readable Zone (MRZ) Vintage Banner -->
+  <rect x="32" y="460" width="736" height="28" fill="#1e293b" rx="3"/>
+  <text x="45" y="478" font-family="'Courier New', Courier, monospace" font-size="11" fill="#cbd5e1" letter-spacing="3.5">P&lt;IDNNAYA&lt;&lt;ALSYA&lt;KANAYA&lt;DZIKRA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</text>
+  <text x="45" y="482" font-family="'Courier New', Courier, monospace" font-size="1" fill="#cbd5e1" letter-spacing="3.5"></text>
+</svg>

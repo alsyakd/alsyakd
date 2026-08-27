@@ -1,0 +1,21 @@
+# Mengabaikan file log dan hasil build
+*.log
+build/
+dist/
+
+# Mengabaikan folder dependensi
+node_modules/
+
+# Mengabaikan file konfigurasi lingkungan atau kredensial sensitif
+.env
+config.json
+
+# Mengabaikan file sistem operasi
+.DS_Store
+Thumbs.db
+
+# Mengabaikan folder editor atau IDE
+.vscode/
+.idea/
+
+/examples.svg
